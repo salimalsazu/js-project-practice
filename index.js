@@ -8,6 +8,7 @@ document.getElementById('delete-confirm').addEventListener('keyup', function (ev
     const deleteButton = document.getElementById('btn-delete');
     if (regEx.test(inputMail.value)) {
         deleteButton.removeAttribute('disabled');
+        deleteButton.style.fontWeight = "bold";
     } else {
         deleteButton.setAttribute('disabled', true);
     }
